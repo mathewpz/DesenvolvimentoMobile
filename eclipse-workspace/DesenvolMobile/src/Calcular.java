@@ -10,4 +10,12 @@ public class Calcular {
 		int subtracao = a-b;
 		return subtracao;
 	}
+	public static int Multiplicacao(int a, int b) {
+		int multiplicacao = a*b;
+		return multiplicacao;
+	}
+	public static int Divisao(int a, int b) {
+		int divisao = a/b;
+		return divisao;
+	}
 }

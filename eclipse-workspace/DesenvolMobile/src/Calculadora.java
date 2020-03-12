@@ -6,10 +6,11 @@ public class Calculadora {
 		
 		int menu;
 		int x, y;
+		String aux;
 		
 		do {
 			menu =Integer.parseInt(JOptionPane.showInputDialog("1)Somar"+
-		"\n2)subtração\n3)sair"));
+		"\n2)subtração\n3)Multiplicação\n4)Divisão\n5)sair"));
 			if(menu==1) {
 				x = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
 				y = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
@@ -18,9 +19,17 @@ public class Calculadora {
 				x = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
 				y = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
 				JOptionPane.showMessageDialog(null,"O resultado é: "+calcular.Subtracao(x, y));
+			}else if(menu==3) {
+				x = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
+				y = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
+				JOptionPane.showMessageDialog(null,"O resultado é: "+calcular.Multiplicacao(x, y));
+			}else if(menu==4) {
+				x = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
+				y = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
+				JOptionPane.showMessageDialog(null,"O resultado é: "+calcular.Divisao(x, y));
 			}
 		}
-		while(menu!=3);
+		while(menu!=5);
 	}
 
 }
