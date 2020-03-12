@@ -6,4 +6,8 @@ public class Calcular {
 		int soma = a + b;
 		return soma;
 	}
+	public static int Subtracao(int a, int b) {
+		int subtracao = a-b;
+		return subtracao;
+	}
 }
